@@ -1,0 +1,44 @@
+[
+    {
+      "service_id":"1",
+      "name": "Wedding Photography",
+      "img": "https://b8m9h3u5.rocketcdn.me/images/wedding-photography-style-rp429016-1024x720.jpg",
+      "description": "One of the most popular categories of professional photography is wedding photography. Why? Because people want the highest quality photos of one of the most important events in their lives.Wedding photographers typically shoot in either a traditional or photo journalistic style. They might also offer photography sessions for engagements, wedding rehearsals, wedding brunches, day-after, or trash the dress.",
+      "date": "13-03-2017"
+    },
+    {
+        "service_id":"2",
+      "name": "Wildlife Photography",
+      "img": "https://b8m9h3u5.rocketcdn.me/images/wildlife-photography-style-rp2097796.jpg",
+      "description": "Wildlife photography is another category. It can be an adventurous type of photography, though not always, and tend to require a lot of patience.",
+      "date": "25-03-2022"
+    },
+    {
+        "service_id":"3",
+      "name": "Travel Photography",
+      "img": "https://b8m9h3u5.rocketcdn.me/images/travel-photography-style-62599.jpg",
+      "description": "Travel Photography is used to photograph a specific place. Photographers try to capture what’s special about a destination, be it the culture, the people, the architecture, or something else.The images captured with travel photography can be used for personal, commercial, or editorial purposes.",
+      "date": "09-05-2017"
+    },
+    {
+        "service_id":"4",
+      "name": "Commercial and Business Photography",
+      "img": "https://b8m9h3u5.rocketcdn.me/images/commercial-photography-style-rp90175.jpeg",
+      "description": "are used in a professional environment. Business photos are those used to market or promote a business.It might be head shots of executives or photos of a team at work. Commercial photography, on the other hand, promotes products or services. It might be featured in catalogs, brochures, advertisements, or other marketing materials.It might also incorporate other photography categories, such as fashion, food, or product photography.",
+      "date": "16-04-2012"
+    },
+    {
+        "service_id":"5",
+      "name": "Editorial Photography",
+      "img": "https://b8m9h3u5.rocketcdn.me/images/editorial-photography-style-rp1213833.jpeg",
+      "description": "Editorial photographs are often used in magazines and newspapers though it does arise in other situations. This style of photography is intended to tell a story and often used in media.",
+      "date": "19-01-2015"
+    },
+    {
+        "service_id":"6",
+      "name": "Event Photography",
+      "img": "https://b8m9h3u5.rocketcdn.me/images/event-photography-rp2273449.jpeg",
+      "description": "In addition to wedding photography, there are other events that people want to capture. Event photography can include parties, dances, award ceremonies, concerts, or any other type of gathering.Photos can be personal or they can be used for marketing or commercial purposes.",
+      "date": "08-08-2012"
+    }
+  ]
