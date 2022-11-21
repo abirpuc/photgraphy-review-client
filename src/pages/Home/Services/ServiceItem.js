@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import UseTitle from '../../../hook/UseTitle';
 
 const ServiceItem = ({ service }) => {
+    UseTitle('Services');
     const { _id, img, name, description } = service
     return (
         <div className="card card-compact bg-base-100 shadow-xl">
@@ -11,7 +14,9 @@ const ServiceItem = ({ service }) => {
                     description ? description.slice(0, 100) : description
                 }</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Details</button>
+                    <Link to={`/detailsservices/${_id}`}>
+                        <button className="btn btn-primary">Details</button>
+                    </Link>
                 </div>
             </div>
         </div>

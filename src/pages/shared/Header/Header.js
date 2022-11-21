@@ -5,6 +5,7 @@ import logo from '../../../assets/logo.png';
 const Navbar = () => {
     const menuItem = <>
         <li><Link to="/">Home</Link></li>
+        <li><Link to="/login">Login</Link></li>
     </>
     return (
         <div className="navbar bg-base-100 w-3/4 mx-auto">
