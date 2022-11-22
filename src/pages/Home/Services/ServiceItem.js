@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import UseTitle from '../../../hook/UseTitle';
 
 const ServiceItem = ({ service }) => {

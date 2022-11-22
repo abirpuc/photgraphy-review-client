@@ -16,11 +16,9 @@ const Singup = () => {
         const photourl = form.photourl.value;
         const password = form.password.value;
 
-        console.log(name,email,password);
         createUser(email,password)
         .then(result => {
             const user = result.user;
-            console.log(user);
         })
         .then(err => console.message(err))
     }
