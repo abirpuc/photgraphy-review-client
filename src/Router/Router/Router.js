@@ -3,9 +3,12 @@ import Main from "../../Layout/Main";
 import Home from "../../pages/Home/Home/Home";
 import Login from "../../pages/Login/Login/Login";
 import Singup from "../../pages/Login/Singup";
+import MyReview from "../../pages/MyReview/MyReview";
 import NotFound from "../../pages/NotFound/NotFound";
+import AddService from "../../pages/Services/AddService/AddService";
 import DetailsService from "../../pages/Services/DetailsService";
 import Services from "../../pages/Services/Services";
+import PrivateRouter from "../PrivateRouter/PrivateRouter";
 
 
 const router = createBrowserRouter([
@@ -33,6 +36,14 @@ const router = createBrowserRouter([
             {
                 path:'/singup',
                 element:<Singup></Singup>
+            },
+            {
+                path:'/myreview',
+                element: <PrivateRouter><MyReview></MyReview></PrivateRouter>
+            },
+            {
+                path:'/addservice',
+                element:<PrivateRouter><AddService></AddService></PrivateRouter>
             }
         ]
     },

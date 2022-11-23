@@ -9,7 +9,7 @@ const Singup = () => {
     const { createUser, updateUser } = useContext(AuthContext);
     const navigate = useNavigate();
     const [error,setError] = useState(null);
-    
+
     const handleForm = event => {
         event.preventDefault();
         const form = event.target;
@@ -62,9 +62,6 @@ const Singup = () => {
                         <p>sing up now for get membership our photography service, contact with us easily for photography and give us review </p>
                     </div>
                     <div className="card flex-shrink-0 w-1/2 shadow-2xl bg-base-100">
-                        {
-                            authError && <h1 className='text-xl text-red-600 w-3/4 mx-auto'>{authError}</h1>
-                        }
                         <form onSubmit={handleForm} className="card-body">
                             <div className="form-control">
                                 <label className="label">

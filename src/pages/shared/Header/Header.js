@@ -8,8 +8,11 @@ const Navbar = () => {
 
     const menuItem = <>
         <li><Link to="/">Home</Link></li>
+        <li><Link to="/blogs">Blog</Link></li>
         {
             user?.email ? <>
+                <li><Link to="/myreview">My Review</Link></li>
+                <li><Link to="/addservice">Add Service</Link></li>
                 <li><Link onClick={logOut}>Logout</Link></li>
             </>
                 : <li><Link to="/login">Login</Link></li>
@@ -38,7 +41,7 @@ const Navbar = () => {
                     user?.photoURL ? <>
                         <div className="avatar online">
                             <div className="w-10 rounded-full">
-                                <img src={user?.photoURL} title={user?.displayName} alt=""/>
+                                <img src={user?.photoURL} title={user?.displayName} alt="" />
                             </div>
                         </div>
                     </> : <></>
