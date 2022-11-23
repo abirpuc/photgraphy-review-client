@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import ReactDatePicker from 'react-datepicker';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const AddService = () => {
-
+    const navigate = useNavigate()
     const handleForm = (event) =>{
         event.preventDefault();
         const form = event.target;
@@ -28,10 +27,17 @@ const AddService = () => {
             },
             body: JSON.stringify(service)
         })
+        .then(()=>{
+            navigate('/services')
+            toast.success('Your Services Added')
+            form.reset()
 
-        form.reset()
+        })
+        .catch(err => console.log(err))
 
-        toast('Service added successfully');
+        
+
+       
     }
 
     return (
@@ -47,8 +53,8 @@ const AddService = () => {
                         <input type="date" name="date" className='input input-bordered w-full'></input>
                     </div>
                     <textarea name="message" className="textarea textarea-bordered mt-4 w-full" placeholder="Write Your service description..."></textarea>
-                    
                     <button className='btn btn-primary my-4 '>Submit</button>
+                    <Toaster></Toaster>
                 </form>
             </div>
         </div>
