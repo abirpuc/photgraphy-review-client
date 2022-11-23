@@ -4,14 +4,15 @@ import logo from '../../../assets/logo.png';
 import { AuthContext } from '../../../AuthContext/AuthPorvider';
 
 const Navbar = () => {
-    const {user} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
+
     const menuItem = <>
         <li><Link to="/">Home</Link></li>
         {
-            user?.email ?<>
-                <li><Link>Logout</Link></li>
+            user?.email ? <>
+                <li><Link onClick={logOut}>Logout</Link></li>
             </>
-            :<li><Link to="/login">Login</Link></li>
+                : <li><Link to="/login">Login</Link></li>
         }
     </>
     return (
@@ -34,7 +35,13 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user?.email
+                    user?.photoURL ? <>
+                        <div className="avatar online">
+                            <div className="w-10 rounded-full">
+                                <img src={user?.photoURL} title={user?.displayName} alt=""/>
+                            </div>
+                        </div>
+                    </> : <></>
                 }
             </div>
         </div>

@@ -3,6 +3,7 @@ import Main from "../../Layout/Main";
 import Home from "../../pages/Home/Home/Home";
 import Login from "../../pages/Login/Login/Login";
 import Singup from "../../pages/Login/Singup";
+import NotFound from "../../pages/NotFound/NotFound";
 import DetailsService from "../../pages/Services/DetailsService";
 import Services from "../../pages/Services/Services";
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
                 element:<Singup></Singup>
             }
         ]
+    },
+    {
+        path:'/*',
+        element:<NotFound></NotFound>
     }
 ])
 
