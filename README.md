@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+### PHOTOGRAPHY REVIEW APPLICATION
+
+## live site link
+
+[link: https://photography-review-fdda3.web.app/]
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +73,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## `REACT ROUTER DOM` npm install react-router-dom 
+[link: https://reactrouter.com/en/main]
+
+## `TAILWIND CSS LIBRARY` npm i daisyui 
+[link: https://daisyui.com/]
+
+## `REACT HOT TOAST` npm install react-hot-toast
+[link: https://react-hot-toast.com/docs]
+
+## `FIREBASE AUTHENTICATION` npm install firebase
+[link: https://console.firebase.google.com]
+
+## `LIVE SITE LINK`
+
+[link: https://photography-review-fdda3.web.app/]
