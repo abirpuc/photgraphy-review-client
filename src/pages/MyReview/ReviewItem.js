@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ReviewItem = ({review}) => {
+const ReviewItem = ({review,handleDelete}) => {
     const {_id,serviceName,message} = review;
     return (
         <tr>
             <th>
                 <label>
-                    <button className='btn  btn-ghost btn-xs'>X</button>
+                    <button onClick={() => handleDelete(_id)} className='btn  btn-ghost btn-xs'>X</button>
                 </label>
             </th>
             <td>
@@ -16,7 +17,7 @@ const ReviewItem = ({review}) => {
                 {message}
             </td>
             <th>
-                <button className="btn btn-ghost btn-xs">Edits</button>
+                <Link to={`/updatereview/${_id}`}><button className="btn btn-ghost btn-xs">Edits</button></Link>
             </th>
         </tr>
     );
