@@ -29,7 +29,7 @@ const router = createBrowserRouter([
             {
                 path:'/detailsservices/:id',
                 element:<DetailsService></DetailsService>,
-                loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({params}) => fetch(`https://photography-review-server-omega.vercel.app/services/${params.id}`)
             },
             {
                 path:'/login',
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
             {
                 path:'/updatereview/:id',
                 element:<UpdateReview></UpdateReview>,
-                loader: ({params}) => fetch(`http://localhost:5000/review/${params.id}`)
+                loader: ({params}) => fetch(`https://photography-review-server-omega.vercel.app/review/${params.id}`)
             },
             {
                 path:'/blogs',

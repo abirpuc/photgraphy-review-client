@@ -12,7 +12,7 @@ const MyReview = () => {
         const reviewDelete = window.confirm("Are want to delete this")
 
         if(reviewDelete){
-            fetch(`http://localhost:5000/review/${id}`,{
+            fetch(`https://photography-review-server-omega.vercel.app/review/${id}`,{
                 method:'DELETE'
             })
             .then(res => res.json())
@@ -27,7 +27,7 @@ const MyReview = () => {
     }
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/review?userEmail=${user?.email}`)
+        fetch(`https://photography-review-server-omega.vercel.app/review?userEmail=${user?.email}`)
         .then(res => res.json())
         .then(data => setReviews(data))
     },[user?.email])

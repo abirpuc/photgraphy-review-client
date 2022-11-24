@@ -20,7 +20,7 @@ const AddService = () => {
         }
 
 
-        fetch('http://localhost:5000/services',{
+        fetch('https://photography-review-server-omega.vercel.app/services',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

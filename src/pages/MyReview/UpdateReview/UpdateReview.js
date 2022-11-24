@@ -25,7 +25,7 @@ const UpdateReview = () => {
         }
 
 
-        fetch(`http://localhost:5000/review/${_id}`,{
+        fetch(`https://photography-review-server-omega.vercel.app/review/${_id}`,{
             method:'PATCH',
             headers:{
                 'content-type':'application/json'
