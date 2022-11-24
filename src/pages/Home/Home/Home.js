@@ -2,7 +2,6 @@ import React from 'react';
 import UseTitle from '../../../hook/UseTitle';
 import AboutUs from '../AboutUs/AboutUs';
 import Banner from '../Banner/Banner';
-import Review from '../Review/Review';
 import Services from '../Services/Services';
 import TeamMeat from '../Team/TeamMeat';
 
@@ -13,7 +12,6 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <TeamMeat></TeamMeat>
-            <Review></Review>
             <AboutUs></AboutUs>
         </div>
     );
