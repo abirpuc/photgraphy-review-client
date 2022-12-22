@@ -50,8 +50,8 @@ const Login = () => {
                         <h1 className="text-5xl font-bold">Login with!</h1>
                         <div className='mt-8 w-full'>
                             <button onClick={googleSingin} className='btn btn-outline btn-error w-3/4 my-2'>Google</button>
-                            <button className='btn btn-outline btn-primary w-3/4 my-2'>Facebook</button>
-                            <button className='btn btn-outline btn-accent w-3/4 my-2'>GitHub</button>
+                            {/* <button className='btn btn-outline btn-primary w-3/4 my-2'>Facebook</button>
+                            <button className='btn btn-outline btn-accent w-3/4 my-2'>GitHub</button> */}
                         </div>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

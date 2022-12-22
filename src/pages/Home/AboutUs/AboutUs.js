@@ -8,7 +8,7 @@ const AboutUs = () => {
                 <div className="max-w-md">
                     <h1 className="mb-5 text-5xl font-bold">About</h1>
                     <p className="mb-5">A photographer is someone who is skilled at taking pictures or photographs with a camera.So we provide you a skilled camera man for taking your magnificat moment remember by taking a magnificat picture.</p>
-                    <button className="btn btn-primary">Learn More</button>
+                    {/* <button className="btn btn-primary">Learn More</button> */}
                 </div>
             </div>
         </div>
